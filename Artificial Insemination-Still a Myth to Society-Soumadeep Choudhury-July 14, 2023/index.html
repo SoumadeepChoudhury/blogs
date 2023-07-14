@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Artificial Insemination: Still A Myth to Society?</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="f70aa2e6-627f-4310-be1b-063721ef2cf6" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1604281663158-1112066b225b?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 12.709999999999999%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🙍🏻‍♀️</span></div><h1 class="page-title">Artificial Insemination: Still A Myth to Society?</h1><p class="page-description"></p></header><div class="page-body"><blockquote id="5a3cbd7f-8bab-48e8-bce0-bda67cb49ca7" class=""><em>&quot;What if Myths overshadow the Science! Should We allow it?”</em></blockquote><p id="f95cef70-8263-42bf-aa93-b60b0a4e7453" class="">Artificial insemination has been a topic of controversy since its inception. While many view it as a solution to infertility, others consider it a threat to traditional reproductive practices. In this article, we will explore the myths surrounding artificial insemination and attempt to shed some light on this often-misunderstood procedure. Let&#x27;s explore the real science behind this.</p><h1 id="e704ad1d-4b5b-450b-b330-53dc31fa0da4" class="">The science behind artificial insemination.</h1><figure id="76b93821-caae-44bb-beda-7a37e4af646c" class="image"><a href="https://upload.wikimedia.org/wikipedia/commons/3/3d/Blausen_0058_ArtificialInsemination.png"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Blausen_0058_ArtificialInsemination.png"/></a><figcaption>Source: <a href="https://en.wikipedia.org/wiki/File:Blausen_0058_ArtificialInsemination.png">Wikipedia</a></figcaption></figure><p id="1a31d0ba-ed0c-481c-8ecf-ae86860713f3" class="">Artificial Insemination, also known as AI, is a fertility treatment that involves the introduction of sperm into a female’s <a href="https://en.wikipedia.org/wiki/Cervix">cervix</a> or <a href="https://en.wikipedia.org/wiki/Uterus">uterine cavity</a> (women’s reproductive system) for the purpose of achieving a pregnancy through <a href="https://en.wikipedia.org/wiki/In_vivo_fertilization">in vivo fertilisations</a> by non-sexual means. It is a fertility treatment for humans and is a common practice in animal breeding, including dairy cattle and pigs.</p><p id="f347f294-adea-4a73-8389-5f4acc185336" class="">Artificial insemination may involve the use of <a href="https://en.wikipedia.org/wiki/Assisted_reproductive_technology">assisted reproductive technology</a> and sperm donation techniques.</p><p id="95c4fe2a-b871-4939-8b24-b5c15ebbde13" class="">How AI has evolved? Is it a brand new concept of this century?</p><h1 id="d71963df-231f-4d66-a34c-9eccfbb234d5" class="">The History of AI</h1><p id="9ef94d6e-1a50-431a-8735-c9c3c422e71d" class=""><a href="https://en.wikipedia.org/wiki/John_Hunter_(surgeon)">John Hunter</a> conducted the first recorded case of artificial insemination in 1790., who helped impregnate a linen draper&#x27;s wife. The first reported case of artificial insemination by a donor occurred in 1884: <a href="https://en.wikipedia.org/w/index.php?title=William_H._Pancoast&amp;action=edit&amp;redlink=1">William H. Pancoast</a>, a professor in Philadelphia, took sperm from his &quot;best-looking&quot; student to inseminate an anesthetized woman without her knowledge. The case was reported 25 years later in a medical journal. The <a href="https://en.wikipedia.org/wiki/Sperm_bank">sperm bank</a> was developed in <a href="https://en.wikipedia.org/wiki/Iowa">Iowa</a> starting in the 1950s in research conducted by University of Iowa medical school researchers <a href="https://en.wikipedia.org/wiki/Jerome_K._Sherman">Jerome K. Sherman</a> and Raymond Bunge.</p><h1 id="d3bb6ea8-472c-472a-9fc6-1b499bbbffc7" class="">Common Myths and Misconceptions about AI</h1><p id="e4b9be19-a57e-4fde-a651-2608cf993ecb" class="">Despite the medical advancements and widespread use of AI, there still exist some myths that it is unnatural and taboo.</p><h2 id="24d21bb2-90f1-45b0-8196-7a99f250e61b" class="">Myth #1: Is AI only for infertile couples?</h2><p id="15747b56-fc88-43ed-9729-5f39127d4413" class="">One of the most significant myths surrounding artificial insemination is that it is only for couples struggling with infertility. Do you also think so?</p><p id="3aa56883-ee42-4fc9-b295-345681222500" class="">While it is true that artificial insemination is commonly used to help couples conceive who may have difficulty doing so naturally, it is also used in other circumstances. For example, single women or same-sex couples who want to have a child may also opt for artificial insemination.</p><h2 id="3c01ea77-e042-4987-9b80-3bdab53fdde0" class="">Myth #2: Is AI a new concept?</h2><p id="c1948604-cdd7-4bf9-bcf5-7395fa95b93e" class="">Artificial insemination is not a new concept. In fact, it has been around for thousands of years, with ancient civilizations using various methods to artificially inseminate livestock. However, it was only in the 20th century that artificial insemination began to be used in humans. Since then, it has become a common practice and has helped countless couples conceive.</p><h2 id="669d9000-51c7-4a4c-b09b-6dc34471cbb6" class="">Myth #3: Is AI dangerous?</h2><figure id="07aed2e8-4765-4046-aeae-b868610db2d5" class="image"><a href="Artificial%20Insemination%20Still%20A%20Myth%20to%20Society%20f70aa2e6627f4310be1b063721ef2cf6/Untitled.png"><img style="width:512px" src="Artificial%20Insemination%20Still%20A%20Myth%20to%20Society%20f70aa2e6627f4310be1b063721ef2cf6/Untitled.png"/></a><figcaption>An elderly couple are advised to try artificial Insemination.</figcaption></figure><p id="d3106b31-8687-48c2-b098-405a5a78ddc5" class="">Artificial insemination is a safe and straightforward procedure. It involves inserting sperm into a woman&#x27;s reproductive system at the optimal time for fertilization to occur. While there are some risks associated with the procedure, such as infection or allergic reaction, these risks are relatively low.</p><p id="4e602171-b775-4e53-ad5f-4e18f44b8952" class="">AI has revolutionized the field of reproductive medicine and has helped millions of couples around the world conceive. It has also enabled the birth of healthy children to parents with genetic disorders, preventing the transfer of hereditary diseases to the next generation. </p><h2 id="5b906066-bb1e-4227-a00d-4c28f8643e2b" class="">Myth #4: Is AI morally wrong?</h2><p id="144546ac-e2f6-4f30-b141-fc9af93b2816" class="">Another reason for the stigma surrounding AI is the belief that it&#x27;s an unnatural process that goes against the laws of nature and is morally wrong. However, the reality is that AI is a medically assisted process that mimics the natural process of conception.</p><p id="393bc59f-5e93-48e5-87d6-4daa7b17e5e4" class="">Am I talking about morality? Morality is subjective, isn’t it? and what is right for one person may not be right for another.</p><h2 id="60e56cc6-f784-4377-864f-e8ae82611573" class="">Myth #5: Does AI always result in pregnancy?</h2><figure id="c633d653-b7b0-4f24-953c-6928826f0688" class="image"><a href="Artificial%20Insemination%20Still%20A%20Myth%20to%20Society%20f70aa2e6627f4310be1b063721ef2cf6/Untitled%201.png"><img style="width:800px" src="Artificial%20Insemination%20Still%20A%20Myth%20to%20Society%20f70aa2e6627f4310be1b063721ef2cf6/Untitled%201.png"/></a><figcaption>The happiest moment for a Mother is to have her child.</figcaption></figure><p id="b4a5f521-e5f2-4a11-8a57-08a85cd22767" class="">While artificial insemination is a reliable method of conception, it is not a guarantee that pregnancy will occur. There are many factors that can affect the success of artificial insemination, including the age of the woman, the quality of the sperm, and underlying medical conditions.</p><h1 id="239cfe79-b9e9-459d-b145-33619679727c" class="">The societal and cultural factors that contribute to the perception of artificial insemination as a myth</h1><p id="dabfa997-c722-453b-9be4-755f04460ce6" class="">The perception of AI as a myth is the result of a complex interplay of societal and cultural factors. These factors include a lack of understanding and education about reproductive health and fertility treatments, which may make AI seem unnatural or taboo to some. In addition, religious beliefs that view assisted reproductive technologies as morally or ethically wrong can contribute to the stigma and misconceptions surrounding AI.</p><p id="586eb3cc-9383-4b83-ab2b-14f787b6b84e" class="">Gender roles and expectations also play a role in the perception of AI as a myth. In certain societies, there may be pressure on women to conceive naturally, and the use of AI may be viewed as a failure or a sign of weakness. Furthermore, the use of AI may challenge traditional gender roles by allowing women to have children without a male partner or husband, which can be seen as controversial in some cultures.</p><p id="ef63f7cf-2257-4909-93e1-7e531840dfc2" class="">The cost of AI is another barrier that can contribute to the perception of AI as a myth. In some societies, access to healthcare and fertility treatment may be limited, and the cost of AI may be prohibitively expensive for many people, leading them to believe that it is only accessible to a privileged few.</p><p id="fbed52db-34f7-40ca-8585-c16d224b7ef9" class="">Addressing these societal and cultural factors by improving education and awareness about reproductive health and fertility treatments, promoting access to affordable healthcare and fertility treatment, and debunking myths and misinformation can help to reduce the stigma and misconceptions surrounding AI.</p><h1 id="f067bd66-e28b-4b50-823e-c7a5395b20f8" class="">Conclusion</h1><figure id="77c29ac7-31a5-4173-8937-b51a01a54162" class="image"><a href="Artificial%20Insemination%20Still%20A%20Myth%20to%20Society%20f70aa2e6627f4310be1b063721ef2cf6/factVsMyth.jpg"><img style="width:960px" src="Artificial%20Insemination%20Still%20A%20Myth%20to%20Society%20f70aa2e6627f4310be1b063721ef2cf6/factVsMyth.jpg"/></a></figure><p id="54726617-9b00-4de2-ae90-1d6bf2feded0" class="">In conclusion, the myth surrounding AI is unfounded and misguided. Artificial insemination is a safe and effective method of conception that has helped countless couples start families. While it may be viewed as controversial by some, it is important to remember that reproductive choices are personal and should be made based on individual circumstances and beliefs. Dispelling the myths and misconceptions surrounding artificial insemination can help create a more informed and accepting society.</p><p id="0ab530ba-c1be-4880-bc07-3bad76595806" class="">So What do you think, Will you allow Myths to overshadow Science? Comment Below.</p><p id="38ce6c09-2a8d-4df4-b8f8-b6444fa90fff" class="">
+</p></div></article></body></html>
